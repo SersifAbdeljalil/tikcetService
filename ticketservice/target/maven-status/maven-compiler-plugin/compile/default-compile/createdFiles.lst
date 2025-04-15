@@ -1,0 +1,11 @@
+com\ticketservice\repository\DatabaseConnection.class
+com\ticketservice\server\Server.class
+com\ticketservice\model\Evenement.class
+com\ticketservice\model\Utilisateur.class
+com\ticketservice\model\Reservation.class
+com\ticketservice\service\EvenementService.class
+com\ticketservice\service\BilletService.class
+com\ticketservice\model\Billet.class
+com\ticketservice\service\UtilisateurService.class
+com\ticketservice\App.class
+com\ticketservice\service\ReservationService.class
