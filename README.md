@@ -1,4 +1,9 @@
-**base de donner**
+## 🛠️ Base de données
+
+Voici le script SQL pour créer la base de données `ticketdb` avec toutes les tables nécessaires au bon fonctionnement de l'application (événements, utilisateurs, billets et réservations).  
+Vous pouvez copier l’ensemble du script ci-dessous et l’exécuter dans votre gestionnaire de base de données (comme MySQL Workbench, phpMyAdmin, etc.).
+
+```sql
 -- Création de la base de données
 CREATE DATABASE IF NOT EXISTS ticketdb;
 USE ticketdb;
@@ -42,6 +47,7 @@ CREATE TABLE IF NOT EXISTS reservations (
     FOREIGN KEY (utilisateur_id) REFERENCES utilisateurs(id),
     FOREIGN KEY (billet_id) REFERENCES billets(id)
 );
+
 
 -- Création d'index pour améliorer les performances
 CREATE INDEX idx_billets_evenement ON billets(evenement_id);
